@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Grid Rows</title>
+  <style>
+    .grid {
+      display: grid;
+      /* grid-template-columns: 200px auto 150px; */
+      /* grid-template-columns: 30% 50% 20%; */
+      /* grid-template-columns: repeat(3, auto); */
+      grid-template-columns: 1fr 1fr 2fr;
+      grid-gap: 1rem;
+    }
+    .item {
+      padding: 3rem;
+      border: 1px solid #ccc;
+      background: #f4f4f4;
+      font-size: 1.3rem;
+      font-weight: bold;
+      text-align: center;
+    }
+    main {
+      display: grid;
+      grid-template-columns: 3fr 1fr;
+      grid-gap: 2rem;
+      padding: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="grid">
+    <div class="item">Item1</div>
+    <div class="item">Item2</div>
+    <div class="item">Item3</div>
+    <div class="item">Item4</div>
+    <div class="item">Item5</div>
+    <div class="item">Item6</div>
+  </div>
+
+  <main>
+    <section>
+      <h3>CSS Grid Layout</h3>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Non dolore officiis, harum ex ullam dolorum architecto eveniet vel? Ut labore aliquam est ab incidunt atque saepe dolorem voluptate similique eligendi?</p>
+    </section>
+    <aside>
+      <h3>Aside Header</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Esse, mollitia.</p>
+    </aside>
+  </main>
+</body>
+</html>
